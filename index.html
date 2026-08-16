@@ -856,6 +856,15 @@
       font-family:"Brush Script MT","Segoe Script","Lucida Handwriting",cursive;
       font-size:28px;line-height:1;color:#111827;font-weight:500
     }
+    .gateRegisterNote{
+      margin:3px 2px 0;
+      color:#4f5562;
+      font-size:12px;
+      line-height:1.5;
+      font-style:italic;
+      text-align:center;
+      font-weight:500;
+    }
     .gateField{display:flex;flex-direction:column;gap:6px;font-size:12px;font-weight:800;color:#5f626d}
     .gateField input{
       width:100%;background:#f3f3f3;border:1px solid #cfd1d6;border-radius:14px;
@@ -1046,6 +1055,7 @@
             <input id="gateEmail" type="email" placeholder="you@email.com" maxlength="180" required>
           </label>
           <button class="primary" type="submit">Gửi yêu cầu truy cập</button>
+          <div class="gateRegisterNote">(*) The user only needs to register once and can use the service long-term.</div>
         </form>
 
         <div class="gateActions" id="gateActions"></div>
