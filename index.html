@@ -991,18 +991,17 @@
 
   
     /* =========================================================
-       REGISTRATION ROOM — UI REFERENCE OVERRIDE
-       UI ONLY. Access / Pending / Approved / Portfolio / Zalo
-       JavaScript logic is intentionally unchanged.
+       REGISTRATION ROOM — UI REFERENCE OVERRIDE v2
+       UI ONLY. All JavaScript logic remains unchanged.
        ========================================================= */
     .accessGate{
-      padding:32px 22px;
+      padding:28px 24px 34px;
       background:#ececec;
     }
 
     .gateCard{
       width:100%;
-      max-width:660px;
+      max-width:860px;
       padding:0;
       border:0;
       border-radius:0;
@@ -1011,82 +1010,85 @@
     }
 
     .gateShell{
-      width:min(590px,100%);
+      width:min(744px,100%);
       margin:0 auto;
     }
 
     .gateTopBrand{
-      gap:30px;
-      margin-bottom:44px;
+      gap:26px;
+      margin-bottom:30px;
     }
 
     .gateLogo{
-      width:130px;
-      height:58px;
-      border-radius:11px;
+      width:164px;
+      height:66px;
+      border-radius:14px;
       font-size:28px;
-      font-weight:900;
+      font-weight:950;
       letter-spacing:-.04em;
-      border:1px solid #98d12b;
+      border:1px solid #9ad32a;
       box-shadow:
-        0 14px 30px rgba(198,255,51,.24),
-        inset 0 0 0 1px rgba(255,255,255,.18);
+        0 12px 28px rgba(198,255,51,.22),
+        inset 0 0 0 1px rgba(255,255,255,.16);
     }
 
     .gateQuickRow{
+      width:100%;
       grid-template-columns:repeat(2,minmax(0,1fr));
-      gap:20px;
+      gap:18px;
+      align-items:stretch;
     }
 
     .gateActionCard{
-      min-height:170px;
-      padding:20px 16px 18px;
-      gap:9px;
-      border:1px solid #e2e5e9;
-      border-radius:25px;
-      background:rgba(255,255,255,.94);
-      box-shadow:0 16px 36px rgba(15,23,42,.075);
+      min-height:220px;
+      padding:28px 20px 20px;
+      gap:10px;
+      border:1px solid #e2e5e8;
+      border-radius:30px;
+      background:rgba(255,255,255,.96);
+      box-shadow:0 12px 30px rgba(15,23,42,.06);
     }
 
     .gateActionCard::after{
-      left:38px;
-      right:38px;
-      height:4px;
+      left:108px;
+      right:108px;
+      height:5px;
     }
 
     .gateActionCard:hover,
     .gateActionCard:focus-visible{
       transform:translateY(-4px);
-      box-shadow:0 21px 44px rgba(15,23,42,.12);
+      box-shadow:0 18px 38px rgba(15,23,42,.10);
     }
 
     .gateActionIcon{
-      width:76px;
-      height:76px;
-      border-radius:19px;
-      margin-bottom:2px;
+      width:94px;
+      height:94px;
+      border-radius:22px;
+      margin-bottom:5px;
+      background:#fbfbfb;
       box-shadow:
         inset 0 0 0 1px rgba(15,23,42,.055),
-        0 8px 20px rgba(15,23,42,.065);
+        0 10px 22px rgba(15,23,42,.06);
     }
 
     .gateActionIcon svg{
-      width:61px;
-      height:61px;
+      width:72px;
+      height:72px;
     }
 
     .gateActionTitle{
-      font-size:18px;
-      font-weight:900;
-      line-height:1.15;
-      letter-spacing:-.025em;
+      font-size:20px;
+      font-weight:950;
+      line-height:1.12;
+      letter-spacing:-.03em;
     }
 
     .gateActionSub{
       font-size:14px;
-      font-weight:750;
+      font-weight:760;
       line-height:1.2;
-      color:#9298a2;
+      color:#969ca5;
     }
 
     .gateStateWrap{
@@ -1094,60 +1096,60 @@
     }
 
     .gateStatusHost{
-      margin-bottom:10px;
+      margin:0 0 10px;
     }
 
     .gateCard h2{
       font-size:20px;
-      margin-bottom:10px;
+      margin:0 0 10px;
     }
 
     .gateCard p{
       font-size:15px;
-      line-height:1.65;
-      margin-bottom:16px;
+      line-height:1.68;
+      margin:0 0 14px;
     }
 
     .gateUserRow{
       font-size:14px;
-      margin-bottom:14px;
+      margin-bottom:12px;
     }
 
     .gateForm{
-      gap:17px;
+      gap:18px;
       margin-bottom:0;
     }
 
     .gateFormTitle{
-      margin:0 0 4px;
+      margin:8px 0 6px;
       font-family:"Brush Script MT","Segoe Script","Lucida Handwriting",cursive;
-      font-size:38px;
-      line-height:1.05;
+      font-size:56px;
+      line-height:1.04;
       font-weight:500;
-      color:#080808;
-      letter-spacing:-.025em;
+      color:#070707;
+      letter-spacing:-.03em;
     }
 
     .gateField{
-      gap:9px;
-      font-size:16px;
+      gap:10px;
+      font-size:18px;
       font-weight:850;
-      color:#5d6470;
+      color:#5b6170;
     }
 
     .gateField input{
-      height:59px;
-      padding:0 20px;
-      border-radius:18px;
+      height:74px;
+      padding:0 24px;
+      border-radius:21px;
       border:1px solid #cfd3d9;
-      background:#f3f3f3;
-      font-size:16px;
-      font-weight:650;
+      background:#f5f5f5;
+      font-size:17px;
+      font-weight:700;
       box-shadow:none;
     }
 
     .gateField input::placeholder{
-      color:#919aa8;
+      color:#8f98a7;
       opacity:1;
       font-weight:700;
     }
@@ -1155,15 +1157,15 @@
     .gateField input:focus{
       background:#fff;
       border-color:#aab0b8;
-      box-shadow:0 0 0 4px rgba(125,57,235,.055);
+      box-shadow:0 0 0 4px rgba(125,57,235,.05);
     }
 
     .gateForm .primary{
-      min-height:66px;
+      min-height:82px;
       margin-top:2px;
-      padding:16px 22px;
-      border-radius:18px;
-      font-size:21px;
+      padding:18px 24px;
+      border-radius:23px;
+      font-size:24px;
       font-weight:950;
       letter-spacing:-.02em;
       box-shadow:none;
@@ -1171,47 +1173,65 @@
 
     .gateForm .primary:hover{
       transform:translateY(-1px);
-      box-shadow:0 10px 24px rgba(198,255,51,.22);
+      box-shadow:0 10px 22px rgba(198,255,51,.22);
     }
 
     .gateRegisterNote{
-      margin:0;
-      padding-top:1px;
-      font-size:16px;
+      margin:6px 0 0;
+      font-size:18px;
       line-height:1.45;
       text-align:center;
-      color:#151515;
+      color:#111;
       font-style:italic;
       font-weight:500;
     }
 
     .gateActions{
       gap:12px;
-      margin-top:20px;
+      margin-top:18px;
     }
 
     .gateActions .iconBtn,
     .gateActions .ghost,
     .gateActions .primary{
-      min-height:48px;
-      padding:11px 17px;
-      border-radius:14px;
+      min-height:50px;
+      padding:11px 18px;
+      border-radius:15px;
       font-size:14px;
     }
 
-    @media(max-width:660px){
-      .accessGate{padding:24px 18px}
-      .gateShell{width:min(560px,100%)}
-      .gateTopBrand{gap:24px;margin-bottom:34px}
-      .gateLogo{width:118px;height:54px;font-size:25px}
-      .gateQuickRow{gap:14px}
-      .gateActionCard{min-height:150px;border-radius:22px}
-      .gateActionIcon{width:68px;height:68px}
-      .gateActionIcon svg{width:55px;height:55px}
+    @media(max-width:820px){
+      .accessGate{padding:24px 18px 30px}
+      .gateShell{width:min(700px,100%)}
+      .gateLogo{width:152px;height:62px;font-size:27px}
+      .gateQuickRow{gap:16px}
+      .gateActionCard{min-height:204px;padding:24px 18px 18px}
+      .gateActionIcon{width:86px;height:86px}
+      .gateActionIcon svg{width:66px;height:66px}
+      .gateActionTitle{font-size:18px}
+      .gateFormTitle{font-size:50px}
+      .gateField input{height:68px}
+      .gateForm .primary{min-height:76px;font-size:22px}
+      .gateRegisterNote{font-size:16px}
+    }
+
+    @media(max-width:620px){
+      .gateTopBrand{gap:22px;margin-bottom:26px}
+      .gateQuickRow{gap:12px}
+      .gateActionCard{
+        min-height:176px;
+        padding:18px 12px 16px;
+        border-radius:24px;
+      }
+      .gateActionCard::after{left:76px;right:76px}
+      .gateActionIcon{width:74px;height:74px;border-radius:18px}
+      .gateActionIcon svg{width:58px;height:58px}
       .gateActionTitle{font-size:16px}
       .gateActionSub{font-size:12px}
-      .gateFormTitle{font-size:34px}
-      .gateForm .primary{font-size:19px}
+      .gateFormTitle{font-size:42px}
+      .gateField{font-size:16px}
+      .gateField input{height:62px;border-radius:18px;font-size:16px}
+      .gateForm .primary{min-height:68px;border-radius:19px;font-size:20px}
       .gateRegisterNote{font-size:14px}
     }
 
@@ -1219,28 +1239,31 @@
       .accessGate{
         align-items:flex-start;
         overflow:auto;
-        padding:24px 14px 32px;
+        padding:22px 14px 30px;
       }
-      .gateTopBrand{gap:20px;margin-bottom:28px}
-      .gateLogo{width:108px;height:50px;font-size:23px}
-      .gateQuickRow{grid-template-columns:1fr 1fr;gap:9px}
+      .gateShell{width:100%}
+      .gateTopBrand{gap:18px;margin-bottom:22px}
+      .gateLogo{width:126px;height:56px;font-size:24px}
+      .gateQuickRow{gap:9px}
       .gateActionCard{
-        min-height:132px;
-        padding:13px 7px;
-        border-radius:19px;
-        gap:6px;
+        min-height:144px;
+        padding:14px 8px 14px;
+        border-radius:20px;
+        gap:7px;
       }
-      .gateActionIcon{width:58px;height:58px;border-radius:16px}
-      .gateActionIcon svg{width:48px;height:48px}
-      .gateActionTitle{font-size:14px}
-      .gateActionSub{font-size:9.5px}
+      .gateActionCard::after{left:46px;right:46px;height:4px}
+      .gateActionIcon{width:60px;height:60px;border-radius:16px;margin-bottom:1px}
+      .gateActionIcon svg{width:46px;height:46px}
+      .gateActionTitle{font-size:13px}
+      .gateActionSub{font-size:9px}
       .gateForm{gap:13px}
-      .gateFormTitle{font-size:31px}
+      .gateFormTitle{font-size:31px;margin-top:2px}
       .gateField{font-size:14px}
-      .gateField input{height:54px;border-radius:16px;font-size:14px}
+      .gateField input{height:54px;padding:0 18px;border-radius:16px;font-size:14px}
       .gateForm .primary{min-height:58px;border-radius:16px;font-size:17px}
       .gateRegisterNote{font-size:12px}
     }
+
 
   </style>
 </head>
@@ -1252,24 +1275,6 @@
       <div class="gateTopBrand">
         <div class="gateLogo">@tins</div>
         <div class="gateQuickRow">
-          <button class="gateActionCard gateZaloBtn" id="openZaloQr" type="button" aria-label="Liên hệ Admin qua Zalo" title="Liên hệ Admin qua Zalo">
-            <span class="gateActionIcon" aria-hidden="true">
-              <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-                <circle class="zaloPulse" cx="48" cy="13" r="7" fill="none" stroke="#1265ef" stroke-width="2"/>
-                <g class="zaloBubble">
-                  <path d="M12 13h33c7.2 0 13 5.8 13 13v8c0 7.2-5.8 13-13 13H29l-11 7v-7h-6C4.8 47-1 41.2-1 34v-8c0-7.2 5.8-13 13-13Z" transform="translate(4 0)" fill="#eef5ff" stroke="#1265ef" stroke-width="2.6" stroke-linejoin="round"/>
-                  <circle class="zaloDot d1" cx="25" cy="30" r="2.6" fill="#1265ef"/>
-                  <circle class="zaloDot d2" cx="34" cy="30" r="2.6" fill="#1265ef"/>
-                  <circle class="zaloDot d3" cx="43" cy="30" r="2.6" fill="#1265ef"/>
-                  <path d="M49 18h7v7" fill="none" stroke="#1265ef" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M55.5 18.5 49 25" fill="none" stroke="#1265ef" stroke-width="2.4" stroke-linecap="round"/>
-                </g>
-              </svg>
-            </span>
-            <span class="gateActionTitle">Zalo Admin</span>
-            <span class="gateActionSub">Hỗ trợ Approved nhanh</span>
-          </button>
-
           <button class="gateActionCard gatePortfolioBtn" id="openPortfolio" type="button" aria-label="Mở Portfolio" title="Portfolio">
             <span class="gateActionIcon" aria-hidden="true">
               <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
@@ -1290,6 +1295,24 @@
             </span>
             <span class="gateActionTitle">My Portfolio</span>
             <span class="gateActionSub">Digital Supply Chain</span>
+          </button>
+
+          <button class="gateActionCard gateZaloBtn" id="openZaloQr" type="button" aria-label="Liên hệ Admin qua Zalo" title="Liên hệ Admin qua Zalo">
+            <span class="gateActionIcon" aria-hidden="true">
+              <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                <circle class="zaloPulse" cx="48" cy="13" r="7" fill="none" stroke="#1265ef" stroke-width="2"/>
+                <g class="zaloBubble">
+                  <path d="M12 13h33c7.2 0 13 5.8 13 13v8c0 7.2-5.8 13-13 13H29l-11 7v-7h-6C4.8 47-1 41.2-1 34v-8c0-7.2 5.8-13 13-13Z" transform="translate(4 0)" fill="#eef5ff" stroke="#1265ef" stroke-width="2.6" stroke-linejoin="round"/>
+                  <circle class="zaloDot d1" cx="25" cy="30" r="2.6" fill="#1265ef"/>
+                  <circle class="zaloDot d2" cx="34" cy="30" r="2.6" fill="#1265ef"/>
+                  <circle class="zaloDot d3" cx="43" cy="30" r="2.6" fill="#1265ef"/>
+                  <path d="M49 18h7v7" fill="none" stroke="#1265ef" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M55.5 18.5 49 25" fill="none" stroke="#1265ef" stroke-width="2.4" stroke-linecap="round"/>
+                </g>
+              </svg>
+            </span>
+            <span class="gateActionTitle">Zalo Admin</span>
+            <span class="gateActionSub">Hỗ trợ Approved nhanh</span>
           </button>
         </div>
       </div>
@@ -1926,7 +1949,7 @@ closeSidebar();
    E Message     -> form message
 */
 const COMMENTS_SHEET_ID='1LlwQPNc_D7D5pwpxykUij7fBUjPE1ZqGNS_ZR4lQG6o';
-const COMMENTS_WEB_APP_URL='https://script.google.com/macros/s/AKfycbxkZlAoUrXZxIgC67erY-stB21RqCXXYd9s2uF_p4QcNTDtMscUFC44avMiaZW6nH3O/exec';
+const COMMENTS_WEB_APP_URL='https://script.google.com/macros/s/AKfycbyLUsfVyU_ibw6qbtUBketi_eZdQjSAoEV8OPeVsgPu0sl08XEpXGyK7jhhA4E5DBQA/exec';
 
 function getCommentsEndpoint(){
   return (COMMENTS_WEB_APP_URL||'').trim();
@@ -2075,7 +2098,7 @@ $('#commentsForm')?.addEventListener('submit',e=>{
    - HTML KHÔNG tự mở chỉ dựa vào localStorage; mỗi lần tải trang
      đều phải nhận Approved từ Apps Script trước khi mở ứng dụng.
    ============================================================ */
-const ACCESS_CONTROL_WEB_APP_URL='https://script.google.com/macros/s/AKfycbxkZlAoUrXZxIgC67erY-stB21RqCXXYd9s2uF_p4QcNTDtMscUFC44avMiaZW6nH3O/exec';
+const ACCESS_CONTROL_WEB_APP_URL='https://script.google.com/macros/s/AKfycbyLUsfVyU_ibw6qbtUBketi_eZdQjSAoEV8OPeVsgPu0sl08XEpXGyK7jhhA4E5DBQA/exec';
 const ACCESS_ADMIN_EMAIL='tinvqt@gmail.com';
 const ACCESS_SERVER_VERSION='2026.08.16-admin-no-oauth-v2';
 const ACCESS_CACHE_KEY='biAccessProfile';
